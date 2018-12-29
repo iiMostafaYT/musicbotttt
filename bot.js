@@ -38,7 +38,7 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`.help | .inv`,'https://www.twitch.tv/v5bz');
+	client.user.setGame(`xMasTeR🎶 , Mars`,'https://www.twitch.tv/v5bz');
 });
 
 
@@ -459,3 +459,6 @@ function isYoutube(str) {
 
 
   
+client.login(process.env.BOT_TOKEN);
+
+
