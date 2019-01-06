@@ -120,8 +120,7 @@ client.on('message', function(message) {
                 .setDescription('**قم بإدراج رابط او اسم الأغنيه**')
 
             message.channel.sendEmbed(play_info)
-		
-		message.react('❎')
+	
 
             return;
 
@@ -152,8 +151,7 @@ client.on('message', function(message) {
                         .setImage(videoInfo.thumbnailUrl)
 
                     message.channel.sendEmbed(play_info);
-			
-			message.react('✅')
+		
 
                     queueNames.push(videoInfo.title);
 
@@ -195,8 +193,7 @@ client.on('message', function(message) {
                     // .setDescription('')
 
                     message.channel.sendEmbed(play_info)
-			
-			message.react('✅')
+		
 
                     message.channel.send(`
                             **${videoInfo.title}** تم تشغيل `)
@@ -218,8 +215,7 @@ client.on('message', function(message) {
         message.channel.send('✔ **تم تغطيه الاغنيه**').then(() => {
 
             skip_song(message);
-		
-		message.react('✅')
+
 
             var server = server = servers[message.guild.id];
 
@@ -254,7 +250,6 @@ client.on('message', function(message) {
             dispatcher.pause();
 
 		
-		message.react('✅')
         });
 
     }
@@ -268,7 +263,6 @@ client.on('message', function(message) {
             dispatcher.resume();
 
 		    
-		    message.react('✅')
         });
 
     }
@@ -317,7 +311,6 @@ client.on('message', function(message) {
 
         message.channel.sendEmbed(playing_now_info);
 	    
-	    message.react('✅')
 
     }
 
